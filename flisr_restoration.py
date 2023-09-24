@@ -120,9 +120,9 @@ if __name__ == '__main__':
     swi_idx = []
     for i in range(n_edge):
         if edge_list[i].Device == 'switch':
+            swi_idx.append(i)
             if edge_list[i].Status == True:
                 swi_status.append(1)
-                swi_idx.append(i)
             else:
                 swi_status.append(0)
     n_switch = len(swi_status)
